@@ -26,7 +26,7 @@ export class SmartTableComponent {
       cancelButtonContent: '<i class="nb-close"></i>',
     },
     delete: {
-      deleteButtonContent: '<i class="nb-trash"></i>',
+      deleteButtonContent: '<i class="nb-edit"></i>',
       confirmDelete: true,
     },
     columns: {
@@ -77,8 +77,8 @@ export class SmartTableComponent {
   }
 
   onDeleteConfirm(event): void {
-    if (window.confirm('Are you sure you want to delete?')) {
-      event.confirm.resolve();
+    if (window.confirm('Entrega de producto satisfactoria')) {
+      //event.confirm.resolve();
     } else {
       event.confirm.reject();
     }
